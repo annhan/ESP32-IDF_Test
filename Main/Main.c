@@ -33,39 +33,11 @@ void app_main()
     // Open
     printf("\n");
     printf("Opening Non-Volatile Storage (NVS) handle... ");
-   /* nvs_handle my_handle;
-    err = nvs_open("storage", NVS_READWRITE, &my_handle);  // Nếu thành công dữ liệu sẽ được lưu vào trong biến my_handle
-    if (err != ESP_OK) {
-        printf("Error (%d) opening NVS handle!\n", err);
-    } else {
-        printf("Done\n");
-
-        // Read
-        printf("Reading restart counter from NVS ... ");
-       // int32_t restart_counter = 0; // value will default to 0, if not set yet in NVS
-        size_t buf_len=sizeof(wifi_save.wifi_name);
-        err = nvs_get_str(my_handle, "wifi_name", wifi_save.wifi_name,&buf_len);  // Đọc biến my_handle và tìm biến có tên là "restart_conter" lưu vào biến restart_counter
-        switch (err) {
-            case ESP_OK:
-                printf("Done\n");
-                printf("Restart counter = %s\n", wifi_save.wifi_name);
-                break;
-            case ESP_ERR_NVS_NOT_FOUND:
-                printf("The value is not initialized yet!\n");
-                break;
-            default :
-                printf("Error (%d) reading!\n", err);
-        }
-        nvs_close(my_handle); // Đóng biến my_handle*/
     char *trave=load_data("wifi_name");
     int size=sizeof(trave);
     	strncpy(wifi_save.wifi_name, trave,size);
     	printf("Restart counter = %s\n", wifi_save.wifi_name);
-       // wifi_save.wifi_name=load_data("wifi_name");
         Save_data("wifi_name","ssss");
-       // strcpy(wifi_save.wifi_name, "nh");
-
-    // Restart module
     for (int i = 10; i >= 0; i--) {
         printf("Restarting in %d seconds...\n", i);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
@@ -84,9 +56,6 @@ char* load_data(char *name){
         printf("Error (%d) opening NVS handle!\n", err);
     } else {
         printf("Done\n");
-        // Read
-        //printf("Reading restart counter from NVS ... ");
-	       // int32_t restart_counter = 0; // value will default to 0, if not set yet in NVS
         err = nvs_get_str(my_handle, name, NULL, &required_size);  // Đọc biến my_handle và tìm biến có tên là "restart_conter" lưu vào biến restart_counter
         switch (err) {
             case ESP_OK:
