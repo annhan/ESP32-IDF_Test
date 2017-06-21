@@ -33,7 +33,7 @@ periph_ctrl.o: \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/machine/_types.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/lock.h \
  C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/stdlib.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/machine/stdlib.h \
@@ -130,7 +130,7 @@ C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/lock.h:
 
 C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

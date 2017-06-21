@@ -3,7 +3,7 @@ src/flash_encrypt.o: \
  C:/msys32/home/Admin/esp-idf/components/bootloader_support/include_priv/bootloader_flash.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_err.h \
  C:/msys32/home/Admin/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- c:\msys32\home\admin\esp32\savestoge\build\include\sdkconfig.h \
+ c:\msys32\home\admin\esp32\esp32-idf_test\build\include\sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/bootloader_support/include_priv/bootloader_random.h \
  C:/msys32/home/Admin/esp-idf/components/bootloader_support/include/esp_image_format.h \
  C:/msys32/home/Admin/esp-idf/components/bootloader_support/include/esp_flash_encrypt.h \
@@ -31,7 +31,7 @@ C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_err.h:
 
 C:/msys32/home/Admin/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-c:\msys32\home\admin\esp32\savestoge\build\include\sdkconfig.h:
+c:\msys32\home\admin\esp32\esp32-idf_test\build\include\sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/bootloader_support/include_priv/bootloader_random.h:
 

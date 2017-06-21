@@ -48,7 +48,7 @@ deep_sleep.o: C:/msys32/home/Admin/esp-idf/components/esp32/deep_sleep.c \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/xtensa/xtensa-versions.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_clk.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/cache.h \
@@ -184,7 +184,7 @@ C:/msys32/home/Admin/esp-idf/components/esp32/include/xtensa/config/core-matmap.
 
 C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h:
 

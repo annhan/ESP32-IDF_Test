@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := SaveStoge
+PROJECT_NAME := ESP32-IDF_Test
 
 include $(IDF_PATH)/make/project.mk
 

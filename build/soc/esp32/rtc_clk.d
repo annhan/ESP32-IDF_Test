@@ -35,7 +35,7 @@ esp32/rtc_clk.o: \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/i2c_bbpll.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/soc_log.h \
  C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h
 
 C:/msys32/home/Admin/esp-idf/components/newlib/include/stdint.h:
 
@@ -107,4 +107,4 @@ C:/msys32/home/Admin/esp-idf/components/soc/esp32/soc_log.h:
 
 C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:

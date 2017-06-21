@@ -5,7 +5,7 @@ SPI_Flash.o: \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/machine/_default_types.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/features.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/_intsup.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_assert.h \
@@ -40,7 +40,7 @@ C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/features.h:
 
 C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/_intsup.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h:
 

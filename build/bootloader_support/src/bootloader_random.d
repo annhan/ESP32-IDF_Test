@@ -25,7 +25,7 @@ src/bootloader_random.o: \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_dport_access.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/i2s_reg.h \
  C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_system.h \
@@ -113,7 +113,7 @@ C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/i2s_reg.h:
 
 C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h:
 

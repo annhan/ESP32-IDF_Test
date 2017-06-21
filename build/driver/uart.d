@@ -40,7 +40,7 @@ uart.o: C:/msys32/home/Admin/esp-idf/components/driver/uart.c \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/machine/types.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/stdio.h \
  C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/malloc.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/machine/malloc.h \
@@ -166,7 +166,7 @@ C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/stdio.h:
 
 C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h:
 

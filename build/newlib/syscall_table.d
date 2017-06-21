@@ -41,7 +41,7 @@ syscall_table.o: \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/dirent.h \
  C:/msys32/home/Admin/esp-idf/components/vfs/include/sys/dirent.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/platform_include/esp_newlib.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h
 
 C:/msys32/home/Admin/esp-idf/components/newlib/include/string.h:
 
@@ -125,4 +125,4 @@ C:/msys32/home/Admin/esp-idf/components/vfs/include/sys/dirent.h:
 
 C:/msys32/home/Admin/esp-idf/components/newlib/platform_include/esp_newlib.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:

@@ -1,5 +1,5 @@
 intr_alloc.o: C:/msys32/home/Admin/esp-idf/components/esp32/intr_alloc.c \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/stdint.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/machine/_default_types.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/features.h \
@@ -63,7 +63,7 @@ intr_alloc.o: C:/msys32/home/Admin/esp-idf/components/esp32/intr_alloc.c \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_attr.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_intr_alloc.h
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/newlib/include/stdint.h:
 

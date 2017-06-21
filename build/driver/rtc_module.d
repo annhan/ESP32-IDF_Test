@@ -24,7 +24,7 @@ rtc_module.o: C:/msys32/home/Admin/esp-idf/components/driver/rtc_module.c \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_assert.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/assert.h \
  C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/sens_reg.h \
@@ -125,7 +125,7 @@ C:/msys32/home/Admin/esp-idf/components/newlib/include/assert.h:
 
 C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/rtc_io_reg.h:
 

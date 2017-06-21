@@ -26,7 +26,7 @@ trax.o: \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_attr.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_dport_access.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_err.h \
  C:/msys32/home/Admin/esp-idf/components/xtensa-debug-module/include/eri.h \
  C:/msys32/home/Admin/esp-idf/components/xtensa-debug-module/include/xtensa-debug-module.h \
@@ -89,7 +89,7 @@ C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_attr.h:
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_dport_access.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_err.h:
 

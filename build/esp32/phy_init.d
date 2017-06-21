@@ -62,7 +62,7 @@ phy_init.o: C:/msys32/home/Admin/esp-idf/components/esp32/phy_init.c \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/xtensa/xtensa-versions.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/nvs_flash/include/nvs.h \
  C:/msys32/home/Admin/esp-idf/components/nvs_flash/include/nvs_flash.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/phy.h \
@@ -195,7 +195,7 @@ C:/msys32/home/Admin/esp-idf/components/esp32/include/xtensa/config/core-matmap.
 
 C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/nvs_flash/include/nvs.h:
 

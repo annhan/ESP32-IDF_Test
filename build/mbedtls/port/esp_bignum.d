@@ -29,7 +29,7 @@ port/esp_bignum.o: \
  C:/msys32/home/Admin/esp-idf/components/mbedtls/port/include/mbedtls/bignum.h \
  C:/msys32/home/Admin/esp-idf/components/mbedtls/include/mbedtls/bignum.h \
  C:/msys32/home/Admin/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/mbedtls/include/mbedtls/check_config.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/stdint.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -146,7 +146,7 @@ C:/msys32/home/Admin/esp-idf/components/mbedtls/include/mbedtls/bignum.h:
 
 C:/msys32/home/Admin/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/mbedtls/include/mbedtls/check_config.h:
 

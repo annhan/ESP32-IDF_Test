@@ -23,7 +23,7 @@ src/bootloader_flash.o: \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/stdio.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/assert.h \
  C:/msys32/home/Admin/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -79,7 +79,7 @@ C:/msys32/home/Admin/esp-idf/components/newlib/include/assert.h:
 
 C:/msys32/home/Admin/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/log/include/esp_log.h:
 

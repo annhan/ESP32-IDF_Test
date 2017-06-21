@@ -17,7 +17,7 @@ esp32/cpu_util.o: \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/xtensa/config/core-isa.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/soc.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_attr.h:
 
@@ -53,4 +53,4 @@ C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/rtc_cntl_reg.h:
 
 C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/soc.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:

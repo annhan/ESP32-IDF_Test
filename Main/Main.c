@@ -6,6 +6,10 @@
 #include "esp_partition.h"
 #include "nvs_flash.h"
 #include "nvs.h"
+#include "freertos/event_groups.h"
+#include "esp_wifi.h"
+#include "esp_log.h"
+#include "esp_event_loop.h"
 struct wifi_save_config{
 	char wifi_name[40];
 	char wifi_pass[100];
@@ -13,8 +17,98 @@ struct wifi_save_config{
 	char wifi_gateway[15];
 	char wifi_subnet[15];
 } wifi_save;
+
+#if CONFIG_POWER_SAVE_MODEM
+#define DEFAULT_PS_MODE WIFI_PS_MODEM
+#elif CONFIG_POWER_SAVE_NONE
+#define DEFAULT_PS_MODE WIFI_PS_NONE
+#else
+#define DEFAULT_PS_MODE WIFI_PS_NONE
+#endif /*CONFIG_POWER_SAVE_MODEM*/
+static const char *TAG = "power_save";
+
 void Save_data(char *name, char *data);
 char* load_data(char *name);
+
+static esp_err_t event_handler(void *ctx, system_event_t *event)
+{
+    switch(event->event_id) {
+
+		case SYSTEM_EVENT_AP_START: {
+	        ESP_LOGD(TAG, "SYSTEM_EVENT_AP_START");
+	        break;
+	    }
+	    case SYSTEM_EVENT_AP_STOP: {
+	        ESP_LOGD(TAG, "SYSTEM_EVENT_AP_STOP");
+	        break;
+	    }
+	    case SYSTEM_EVENT_AP_STACONNECTED: {
+	        system_event_ap_staconnected_t *staconnected = &event->event_info.sta_connected;
+	        ESP_LOGD(TAG, "SYSTEM_EVENT_AP_STACONNECTED, mac:" MACSTR ", aid:%d", \
+	                   MAC2STR(staconnected->mac), staconnected->aid);
+	        break;
+	    }
+	    case SYSTEM_EVENT_AP_STADISCONNECTED: {
+	        system_event_ap_stadisconnected_t *stadisconnected = &event->event_info.sta_disconnected;
+	        ESP_LOGD(TAG, "SYSTEM_EVENT_AP_STADISCONNECTED, mac:" MACSTR ", aid:%d", \
+	                   MAC2STR(stadisconnected->mac), stadisconnected->aid);
+	        break;
+	    }
+	    case SYSTEM_EVENT_STA_START:
+			ESP_LOGI(TAG, "SYSTEM_EVENT_STA_START");
+			ESP_ERROR_CHECK(esp_wifi_connect());
+			break;
+	    case SYSTEM_EVENT_STA_GOT_IP:
+			ESP_LOGI(TAG, "SYSTEM_EVENT_STA_GOT_IP");
+			ESP_LOGI(TAG, "got ip:%s\n",
+			ip4addr_ntoa(&event->event_info.got_ip.ip_info.ip));
+	        break;
+	    case SYSTEM_EVENT_STA_DISCONNECTED:
+			ESP_LOGI(TAG, "SYSTEM_EVENT_STA_DISCONNECTED");
+			ESP_ERROR_CHECK(esp_wifi_connect());
+			break;
+	    default:
+	        break;
+    }
+    return ESP_OK;
+}
+
+/*init wifi as sta and set power save mode*/
+static void wifi_power_save(void)
+{
+    tcpip_adapter_init();
+    ESP_ERROR_CHECK(esp_event_loop_init(event_handler, NULL));
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+    ESP_ERROR_CHECK( esp_wifi_set_storage(WIFI_STORAGE_RAM) );
+    wifi_config_t wifi_sta_config = {
+		.sta = {
+	    	.ssid = "tam",
+	    	.password = "tam"		
+	    },
+	};
+    wifi_config_t wifi_ap_config = {
+	    .ap = {
+			.ssid = "mHome ESP32",
+			.ssid_len = 0,
+			.password = "123789456",
+			.channel = 1,
+			.authmode = WIFI_AUTH_WPA2_PSK,
+			.beacon_interval = 400,
+			.max_connection = 16,
+			},
+	};
+    strncpy((char *)wifi_sta_config.sta.ssid, wifi_save.wifi_name,sizeof(wifi_save.wifi_name));
+    strncpy((char *)wifi_sta_config.sta.password, wifi_save.wifi_pass,sizeof(wifi_save.wifi_pass));
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_APSTA));
+    ESP_ERROR_CHECK( esp_wifi_set_config(WIFI_IF_AP, &wifi_sta_config) );
+    ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_ap_config));
+    ESP_ERROR_CHECK(esp_wifi_start());
+
+    ESP_LOGI(TAG, "esp_wifi_set_ps().");
+    esp_wifi_set_ps(DEFAULT_PS_MODE);
+}
+
 void app_main()
 {
     // Initialize NVS
@@ -30,15 +124,15 @@ void app_main()
     }
     ESP_ERROR_CHECK( err );
 
-    // Open
-    printf("\n");
-    printf("Opening Non-Volatile Storage (NVS) handle... ");
-    char *trave=load_data("wifi_name");
-    int size=sizeof(trave);
-    	strncpy(wifi_save.wifi_name, trave,size);
-    	printf("Restart counter = %s\n", wifi_save.wifi_name);
-        Save_data("wifi_name","ssss");
-    for (int i = 10; i >= 0; i--) {
+    strncpy(wifi_save.wifi_name, load_data("wifi_name"),sizeof(wifi_save.wifi_name));
+    strncpy(wifi_save.wifi_pass, load_data("wifi_pass"),sizeof(wifi_save.wifi_pass));
+
+    printf("Restart counter = %s\n", wifi_save.wifi_name);
+    printf("Restart counter = %s\n", wifi_save.wifi_pass);
+    Save_data("wifi_name","mHomeRD");
+    Save_data("wifi_pass","123789456");
+    wifi_power_save();
+    for (int i = 120; i >= 0; i--) {
         printf("Restarting in %d seconds...\n", i);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
@@ -46,6 +140,8 @@ void app_main()
     fflush(stdout);
     esp_restart();
 }
+
+
 char* load_data(char *name){
 	esp_err_t err;
 	size_t required_size;
@@ -61,6 +157,7 @@ char* load_data(char *name){
             case ESP_OK:
                 tam = malloc(required_size);
             	err = nvs_get_str(my_handle, name, tam, &required_size);
+            	
                 break;
             case ESP_ERR_NVS_NOT_FOUND:
                 printf("The value is not initialized yet!\n");

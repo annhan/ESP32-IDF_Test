@@ -31,7 +31,7 @@ vfs_uart.o: C:/msys32/home/Admin/esp-idf/components/vfs/vfs_uart.c \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_attr.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/errno.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h
 
 C:/msys32/home/Admin/esp-idf/components/newlib/include/string.h:
 
@@ -97,4 +97,4 @@ C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/errno.h:
 
 C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/uart_struct.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:

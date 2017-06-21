@@ -1,5 +1,5 @@
 int_wdt.o: C:/msys32/home/Admin/esp-idf/components/esp32/int_wdt.c \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/stdint.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/machine/_default_types.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/features.h \
@@ -66,7 +66,7 @@ int_wdt.o: C:/msys32/home/Admin/esp-idf/components/esp32/int_wdt.c \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_intr_alloc.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_int_wdt.h
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/newlib/include/stdint.h:
 

@@ -11,7 +11,7 @@ src/nvs_pagemanager.o: \
  C:/msys32/home/Admin/esp-idf/components/nvs_flash/src/compressed_enum_table.hpp \
  C:/msys32/home/Admin/esp-idf/components/nvs_flash/src/nvs_page.hpp \
  C:/msys32/home/Admin/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/nvs_flash/src/intrusive_list.h \
  C:/msys32/home/Admin/esp-idf/components/nvs_flash/src/nvs_item_hash_list.hpp
 
@@ -37,7 +37,7 @@ C:/msys32/home/Admin/esp-idf/components/nvs_flash/src/nvs_page.hpp:
 
 C:/msys32/home/Admin/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/nvs_flash/src/intrusive_list.h:
 

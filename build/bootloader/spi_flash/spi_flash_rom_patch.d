@@ -9,7 +9,7 @@ spi_flash_rom_patch.o: \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/soc.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/spi_flash.h \
  C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/spi_reg.h \
- c:\msys32\home\admin\esp32\savestoge\build\include\sdkconfig.h
+ c:\msys32\home\admin\esp32\esp32-idf_test\build\include\sdkconfig.h
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/ets_sys.h:
 
@@ -29,4 +29,4 @@ C:/msys32/home/Admin/esp-idf/components/esp32/include/rom/spi_flash.h:
 
 C:/msys32/home/Admin/esp-idf/components/soc/esp32/include/soc/spi_reg.h:
 
-c:\msys32\home\admin\esp32\savestoge\build\include\sdkconfig.h:
+c:\msys32\home\admin\esp32\esp32-idf_test\build\include\sdkconfig.h:

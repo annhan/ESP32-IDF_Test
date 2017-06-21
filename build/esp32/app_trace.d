@@ -26,7 +26,7 @@ app_trace.o: C:/msys32/home/Admin/esp-idf/components/esp32/app_trace.c \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_dport_access.h \
  C:/msys32/home/Admin/esp-idf/components/xtensa-debug-module/include/eri.h \
  C:/msys32/home/Admin/esp-idf/components/xtensa-debug-module/include/trax.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_err.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/stdio.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/types.h \
@@ -125,7 +125,7 @@ C:/msys32/home/Admin/esp-idf/components/xtensa-debug-module/include/eri.h:
 
 C:/msys32/home/Admin/esp-idf/components/xtensa-debug-module/include/trax.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_err.h:
 

@@ -3,7 +3,7 @@ src/option/syscall.o: \
  c:\msys32\home\admin\esp-idf\components\fatfs\src\ff.h \
  c:\msys32\home\admin\esp-idf\components\fatfs\src\integer.h \
  c:\msys32\home\admin\esp-idf\components\fatfs\src\ffconf.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/reent.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/_ansi.h \
@@ -58,7 +58,7 @@ c:\msys32\home\admin\esp-idf\components\fatfs\src\integer.h:
 
 c:\msys32\home\admin\esp-idf\components\fatfs\src\ffconf.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

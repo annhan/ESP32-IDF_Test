@@ -12,7 +12,7 @@ library/ssl_lib.o: \
  C:/msys32/home/Admin/esp-idf/components/openssl/include/internal/ssl_cert.h \
  C:/msys32/home/Admin/esp-idf/components/openssl/include/internal/ssl_dbg.h \
  C:/msys32/home/Admin/esp-idf/components/openssl/include/platform/ssl_opt.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/openssl/include/platform/ssl_port.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_types.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/cdefs.h \
@@ -65,7 +65,7 @@ C:/msys32/home/Admin/esp-idf/components/openssl/include/internal/ssl_dbg.h:
 
 C:/msys32/home/Admin/esp-idf/components/openssl/include/platform/ssl_opt.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/openssl/include/platform/ssl_port.h:
 

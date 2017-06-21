@@ -29,7 +29,7 @@ netif/lowpan6.o: \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/_default_fcntl.h \
  C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/stat.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_task.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/lwip/include/lwip/lwip/debug.h \
  C:/msys32/home/Admin/esp-idf/components/lwip/include/lwip/lwip/arch.h \
  C:/msys32/home/Admin/esp-idf/components/lwip/include/lwip/port/arch/cc.h \
@@ -132,7 +132,7 @@ C:/msys32/home/Admin/esp-idf/components/newlib/include/sys/stat.h:
 
 C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_task.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/lwip/include/lwip/lwip/debug.h:
 

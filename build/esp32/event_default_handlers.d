@@ -29,7 +29,7 @@ event_default_handlers.o: \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/esp_wifi.h \
  C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h \
+ C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h \
  C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/xtensa/hal.h \
  C:/msys32/home/Admin/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -151,7 +151,7 @@ C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-C:/msys32/home/Admin/ESP32/SaveStoge/build/include/sdkconfig.h:
+C:/msys32/home/Admin/ESP32/ESP32-IDF_Test/build/include/sdkconfig.h:
 
 C:/msys32/home/Admin/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
