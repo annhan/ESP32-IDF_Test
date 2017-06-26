@@ -77,6 +77,15 @@ static esp_err_t event_handler(void *ctx, system_event_t *event)
 static void wifi_power_save(void)
 {
     tcpip_adapter_init();
+    	ESP_ERROR_CHECK(tcpip_adapter_dhcps_stop(TCPIP_ADAPTER_IF_AP));
+	tcpip_adapter_ip_info_t info;
+	memset(&info, 0, sizeof(info));
+	IP4_ADDR(&info.ip, 192, 168, 10, 1);
+	IP4_ADDR(&info.gw, 192, 168, 10, 1);
+	IP4_ADDR(&info.netmask, 255, 255, 255, 0);
+	ESP_ERROR_CHECK(tcpip_adapter_set_ip_info(TCPIP_ADAPTER_IF_AP, &info));
+	ESP_ERROR_CHECK(tcpip_adapter_dhcps_start(TCPIP_ADAPTER_IF_AP));
+	
     ESP_ERROR_CHECK(esp_event_loop_init(event_handler, NULL));
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
@@ -87,26 +96,34 @@ static void wifi_power_save(void)
 	    	.password = "tam"		
 	    },
 	};
-    wifi_config_t wifi_ap_config = {
-	    .ap = {
-			.ssid = "mHome ESP32",
-			.ssid_len = 0,
-			.password = "123789456",
-			.channel = 1,
-			.authmode = WIFI_AUTH_WPA2_PSK,
-			.beacon_interval = 400,
-			.max_connection = 16,
-			},
-	};
+
+		
+	//memset(&wifi_ap_config, 0, sizeof(wifi_ap_config));
+   //strcpy((char *)wifi_ap_config.ap.ssid, "ESP32_mHome\0");
     strncpy((char *)wifi_sta_config.sta.ssid, wifi_save.wifi_name,sizeof(wifi_save.wifi_name));
     strncpy((char *)wifi_sta_config.sta.password, wifi_save.wifi_pass,sizeof(wifi_save.wifi_pass));
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_APSTA));
-    ESP_ERROR_CHECK( esp_wifi_set_config(WIFI_IF_AP, &wifi_sta_config) );
-    ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_ap_config));
+    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_AP));
+    wifi_config_t wifi_ap_config  = {
+	    .ap = {
+			.ssid = "ESP32\0",
+			.ssid_len = 0,
+			.password = "123789456",
+			.channel = 6,
+			.authmode = WIFI_AUTH_WPA2_PSK,
+			.ssid_hidden = 0,
+			.beacon_interval = 100,
+			.max_connection = 4,
+			},
+	};
+	//wifi_ap_config.ap.ssid_len=sizeof(wifi_ap_config.ap.ssid);
+    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_AP, &wifi_ap_config) );
+   // ESP_LOGI(TAG, esp_wifi_set_config(WIFI_IF_AP, &wifi_ap_config));
+    //ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_sta_config));
     ESP_ERROR_CHECK(esp_wifi_start());
-
-    ESP_LOGI(TAG, "esp_wifi_set_ps().");
-    esp_wifi_set_ps(DEFAULT_PS_MODE);
+    printf("Starting access point, SSID=%s\n", wifi_ap_config.ap.ssid);
+	//ESP_ERROR_CHECK( esp_wifi_connect() );
+   // ESP_LOGI(TAG, "esp_wifi_set_ps().");
+    //esp_wifi_set_ps(DEFAULT_PS_MODE);
 }
 
 void app_main()
